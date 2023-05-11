@@ -1,4 +1,3 @@
-
 package loja;
 
 /**
@@ -9,11 +8,11 @@ package loja;
  * Gustavo Bueno de Oliveira
  * Gabriel Braga de Sá
   */
-public class Cliente {
+public class Cliente extends Pessoa{
     private int id;
-    private Pessoa Pessoa;
     private Endereco Endereco;
     private Telefone Telefone;
+    
     void Cliente(int id){
         this.id = id;
     }
@@ -24,14 +23,6 @@ public class Cliente {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public Pessoa getPessoa() {
-        return Pessoa;
-    }
-
-    public void setPessoa(Pessoa Pessoa) {
-        this.Pessoa = Pessoa;
     }
 
     public Endereco getEndereco() {
