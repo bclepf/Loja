@@ -15,7 +15,7 @@ public class Pedido {
     private String status;
     private Cliente Cliente;
     private ArrayList<Produto> itens = new ArrayList<>();
-    
+     
    public void addItem(Produto produto, int quantidade) {
        PedidoItem item = new PedidoItem(produto, quantidade);
        this.itens.add(item);

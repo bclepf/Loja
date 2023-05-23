@@ -13,6 +13,10 @@ public class Cliente extends Pessoa{
     private Endereco Endereco;
     private Telefone Telefone;
     
+public Cliente(String nome, String dataDeNascimento){    
+    super(nome, dataDeNascimento);
+    }
+
     void Cliente(int id){
         this.id = id;
     }
